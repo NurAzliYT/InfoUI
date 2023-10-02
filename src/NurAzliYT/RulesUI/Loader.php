@@ -1,13 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Riza\InfoUI;
+namespace NurAzliYT\InfoUI;
 
 use pocketmine\Server;
 use pocketmine\player\Player;
-
 use pocketmine\plugin\PluginBase;
-
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
@@ -22,7 +20,7 @@ class Loader extends PluginBase implements Listener{
         
         @mkdir($this->getDataFolder());
        $this->saveDefaultConfig();
-       $this->getResource("config.yml");
+       $this->saveResource("config.yml");
        
     }
     
@@ -138,6 +136,7 @@ class Loader extends PluginBase implements Listener{
                 break;
             }
         });
+        # Form Set For Info
         $form->setTitle($this->getConfig()->get("Update-Title"));
         $form->setContent($this->getConfig()->get("Update-Text"));
         $form->addButton($this->getConfig()->get("Back-Button"), 0, "textures/ui/refresh_light");
