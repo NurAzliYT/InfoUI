@@ -1,0 +1,47 @@
+
+##      ##   ##########  ##        #########
+##      ##   ##########  ##        #########
+##      ##   ##      ##  ##        ##     ##
+##########   ##      ##  ##        ##     ##
+##########   ##########  ##        ##     ##
+##      ##   ##########  ##        ##     ##
+##      ##   ##      ##  ##        #########
+##      ##   ##      ##  ########  #########
+
+#################### | InfoUI Form | ####################
+
+InfoUI-Title: "§l§eInfoUI"
+About-Button: "§l§0About\n§r§7Tap to see information"
+Rules-Button: "§l§0Rules\n§r§7Tap to see rules"
+Staff-Button: "§l§0Staff\n§r§7Tap to see staff list"
+Update-Button: "§l§0Update\n§r§7Tap to see update"
+
+#################### | About Form | ####################
+
+About-Title: "§l§eAbout"
+About-Text: "Change on config.yml [About-Text]"
+
+#################### | Rules Form | ####################
+
+Rules-Title: "§l§eRules"
+Rules-Text: "Change on config.yml [Rules-Text]"
+
+#################### | Staff Form | ####################
+
+Staff-Title: "§l§eStaff"
+Staff-Text: "Change on config.yml [Staff-Text]"
+
+#################### | Update Form | ####################
+
+Update-Title: "§l§eUpdate"
+Update-Text: "Change on config.yml [Update-Text]"
+
+#################### | Back Button | ####################
+
+Back-Button: "§l§0< Back"
+
+#################### | Exit Button | ####################
+
+Exit-Button: "§l§4Exit"
+
+#################### | Thank you | ####################
