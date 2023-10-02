@@ -5,6 +5,7 @@ branches:
 projects:
   InfoUI:
     path: ""
-libs:
-- src: jojoe77777/FormAPI/libFormAPI
+    lib:
+    - src: jojoe77777/FormAPI/libFormAPI
+      version: ^2.1.1
 ...
