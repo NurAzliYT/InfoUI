@@ -1,18 +1,18 @@
 ---
 name: InfoUI
-main: Riza\InfoUI\Loader
+main: NurAzliYT\InfoUI\Loader
 version: 1.0.0
 api: 5.0.0
-author: Riza
-description: "See info such as About, Staff, Update, Rules"
+author: NurAzliYT
+description: "See info such as About, Staff, Update, Rules Form UI"
 
 commands:
   info:
     description: "Open InfoUI"
-    permission: info.rz
+    permission: infoui.command
     
 permissions:
-  info.rz:
+  infoui.command:
     description: "InfoUI Perm"
     default: true
 ...
