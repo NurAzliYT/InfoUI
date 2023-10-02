@@ -5,6 +5,7 @@ branches:
 projects:
   InfoUI:
     path: ""
+    icon: 471662.png
     libs:
     - src: jojoe77777/FormAPI/libFormAPI
       version: ^2.1.1
