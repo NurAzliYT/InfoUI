@@ -19,8 +19,8 @@ class Loader extends PluginBase implements Listener{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         
         @mkdir($this->getDataFolder());
-       $this->saveDefaultConfig();
-       $this->saveResource("config.yml");
+       $this->getDefaultConfig();
+       $this->getResource("config.yml");
        
     }
     
