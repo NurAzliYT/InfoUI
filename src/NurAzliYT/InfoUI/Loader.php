@@ -57,7 +57,7 @@ class Loader extends PluginBase implements Listener{
                 break;
                 
                 case 4:
-                    
+                    $this->Announcement($player);
                 break;
             }
         });
@@ -66,6 +66,7 @@ class Loader extends PluginBase implements Listener{
         $form->addButton($this->getConfig()->get("Rules-Button"), 0, "textures/ui/recipe_book_icon");
         $form->addButton($this->getConfig()->get("Staff-Button"), 0, "textures/ui/icon_best3");
         $form->addButton($this->getConfig()->get("Update-Button"), 0, "textures/ui/mashup_world");
+        $form->addButton($this->getConfig()->get("Announcement-Button"), 0, "textures/ui/icon_book_writable");
         $form->addButton($this->getConfig()->get("Exit-Button"), 0, "textures/ui/icon_import");
         $form->sendToPlayer($player);
     }
@@ -139,6 +140,25 @@ class Loader extends PluginBase implements Listener{
         # Form Set For Info
         $form->setTitle($this->getConfig()->get("Update-Title"));
         $form->setContent($this->getConfig()->get("Update-Text"));
+        $form->addButton($this->getConfig()->get("Back-Button"), 0, "textures/ui/refresh_light");
+        $form->sendToPlayer($player);
+    }
+        
+    public function Update($player){
+        $form = new SimpleForm(function(Player $player, int $data = null){
+        $result = $data;
+        if($result === null){
+            return true;
+            }
+            switch($result){
+                case 0:
+                    $this->InfoUI($player);
+                break;
+            }
+        });
+        # Form Set For Info
+        $form->setTitle($this->getConfig()->get("Announcement-Title"));
+        $form->setContent($this->getConfig()->get("Announcement-Text"));
         $form->addButton($this->getConfig()->get("Back-Button"), 0, "textures/ui/refresh_light");
         $form->sendToPlayer($player);
     }
