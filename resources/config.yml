@@ -1,13 +1,3 @@
-
-##      ##   ##########  ##        #########
-##      ##   ##########  ##        #########
-##      ##   ##      ##  ##        ##     ##
-##########   ##      ##  ##        ##     ##
-##########   ##########  ##        ##     ##
-##      ##   ##########  ##        ##     ##
-##      ##   ##      ##  ##        #########
-##      ##   ##      ##  ########  #########
-
 #################### | InfoUI Form | ####################
 
 InfoUI-Title: "§l§eInfoUI"
@@ -15,6 +5,8 @@ About-Button: "§l§0About\n§r§7Tap to see information"
 Rules-Button: "§l§0Rules\n§r§7Tap to see rules"
 Staff-Button: "§l§0Staff\n§r§7Tap to see staff list"
 Update-Button: "§l§0Update\n§r§7Tap to see update"
+Announcement-Button: "§l§0Announcement\n§r&7Tap to see Announcement"
+
 
 #################### | About Form | ####################
 
@@ -35,6 +27,11 @@ Staff-Text: "Change on config.yml [Staff-Text]"
 
 Update-Title: "§l§eUpdate"
 Update-Text: "Change on config.yml [Update-Text]"
+
+#################### | Announcement Form | ##############
+
+Announcement: "§l§eAnnouncement"
+Announcement-Text: "Change on config.yml 
 
 #################### | Back Button | ####################
 
