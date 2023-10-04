@@ -144,7 +144,7 @@ class Loader extends PluginBase implements Listener{
         $form->sendToPlayer($player);
     }
         
-    public function Update($player){
+    public function Announcement($player){
         $form = new SimpleForm(function(Player $player, int $data = null){
         $result = $data;
         if($result === null){
