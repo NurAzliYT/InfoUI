@@ -1,8 +1,8 @@
 ---
 name: InfoUI
 main: NurAzliYT\InfoUI\Loader
-version: 1.0.0
-api: 5.0.0
+version: 1.0.1
+api: 5.3.0
 author: NurAzliYT
 description: "See info such as About, Staff, Update, Rules Form UI"
 
