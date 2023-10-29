@@ -17,20 +17,27 @@ class ReloadCommand extends Command {
         $this->plugin = $plugin;
     }
 
-    public function execute(CommandSender $sender, string $commandLabel, array $args) {
-        if ($this->testPermission($sender)) {
-            // Example if you want to reload all existing UI Forms:
-            $uiForms = UIFormManager::getInstance()->getAllForms();
+public function execute(CommandSender $sender, string $commandLabel, array $args) {
+    if ($this->testPermission($sender)) {
+        // Mengambil referensi ke FormAPI
+        $formAPI = $this->plugin->getServer()->getPluginManager()->getPlugin("InfoUI");
+
+        if ($formAPI !== null) {
             $reloadedCount = 0;
 
-            foreach ($uiForms as $uiForm) {
-                $uiForm->reload();
+            // Contoh jika Anda ingin memuat ulang semua UI Forms yang ada
+            $forms = $formAPI->getAllForms();
+            foreach ($forms as $form) {
+                $form->reload(); // Memuat ulang UI Form
                 $reloadedCount++;
             }
 
             $sender->sendMessage(TextFormat::GREEN . "Reloaded " . $reloadedCount . " UI Forms.");
         } else {
-            $sender->sendMessage("You don't have permission to run this command.");
+            $sender->sendMessage("FormAPI tidak ditemukan. Pastikan Anda telah menginstal dan mengaktifkan FormAPI.");
         }
+    } else {
+        $sender->sendMessage("Anda tidak memiliki izin untuk menjalankan perintah ini.");
     }
+}
 }
